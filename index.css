@@ -1,0 +1,31 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+#countdown {
+  margin-top: 100px;
+}
+
+#days {
+  text-align: center;
+}
+
+#hours {
+  text-align: center;
+}
+
+#minutes {
+  text-align: center;
+}
+
+#seconds {
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  margin: 24px;
+}
