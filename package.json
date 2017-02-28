@@ -1,0 +1,21 @@
+{
+  "name": "wedding-countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "surge -p .",
+    "start": "live-server"
+  },
+  "repository": "git+https://github.com/kevindurb/wedding-countdown.git",
+  "author": "Kevin Durbin <kevindurb@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevindurb/wedding-countdown/issues"
+  },
+  "homepage": "https://github.com/kevindurb/wedding-countdown#readme",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "surge": "^0.18.0"
+  }
+}
