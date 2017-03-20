@@ -1,12 +1,17 @@
-function render() {
-  var dayEl = document.getElementById('days');
-  var hourEl = document.getElementById('hours');
-  var minuteEl = document.getElementById('minutes');
-  var secondEl = document.getElementById('seconds');
-  var progressEl = document.getElementById('progress');
+var dayEl = document.getElementById('days');
+var hourEl = document.getElementById('hours');
+var minuteEl = document.getElementById('minutes');
+var secondEl = document.getElementById('seconds');
+var progressEl = document.getElementById('progress');
+var engaged = moment('2016-11-23 18:30:00');
+var weddingNight = moment('2017-06-24 22:00:00');
 
-  var engaged = moment('2016-11-23 18:30:00');
-  var weddingNight = moment('2017-06-24 22:00:00');
+function render() {
+  var percent = calcTime();
+  positionPercent(percent);
+}
+
+function calcTime() {
   var today = moment();
   var days = weddingNight.diff(
     today,
@@ -37,6 +42,14 @@ function render() {
   var percent = progress / total * 100;
 
   progressEl.value = percent;
+  return percent;
+}
+
+function positionPercent(percent) {
+  var percentEl = document.getElementById('percent');
+
+  percentEl.style.left = percent + "%";
+  percentEl.textContent = parseInt(percent) + "%";
 }
 
 render();

@@ -1,6 +1,6 @@
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #fafafa;
+  color: #212121;
   font-size: 32px;
   line-height: 48px;
 }
@@ -28,4 +28,24 @@ body {
 #progress {
   width: 100%;
   margin-top: 24px;
+  padding: 0 24px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 24px;
+}
+
+#progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+}
+
+#progress::-webkit-progress-value {
+  background-color: #4caf50;
+}
+
+#percent {
+  position: relative;
+  margin-left: -56px;
+  font-size: 24px;
+  color: #fafafa;
+  top: -49px;
 }
