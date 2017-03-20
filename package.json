@@ -14,8 +14,10 @@
     "url": "https://github.com/kevindurb/wedding-countdown/issues"
   },
   "homepage": "https://github.com/kevindurb/wedding-countdown#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
   "dependencies": {
-    "live-server": "^1.2.0",
-    "surge": "^0.18.0"
+    "surge": "^0.19.0"
   }
 }
