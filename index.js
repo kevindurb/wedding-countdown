@@ -55,3 +55,7 @@ function positionPercent(percent) {
 render();
 
 setInterval(render, 1000);
+
+document.addEventListener('touchmove', function (event) {
+  event.preventDefault();
+});
