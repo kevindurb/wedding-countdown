@@ -3,6 +3,12 @@ body {
   color: #212121;
   font-size: 32px;
   line-height: 48px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #countdown {
