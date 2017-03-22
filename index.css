@@ -12,7 +12,6 @@ body {
 }
 
 #countdown {
-  margin-top: 100px;
 }
 
 #days {
@@ -54,4 +53,11 @@ body {
   font-size: 24px;
   color: #fafafa;
   top: -49px;
+}
+
+#container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
