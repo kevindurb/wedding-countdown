@@ -3,8 +3,8 @@ var hourEl = document.getElementById('hours');
 var minuteEl = document.getElementById('minutes');
 var secondEl = document.getElementById('seconds');
 var progressEl = document.getElementById('progress');
-var engaged = moment('2016-11-23 18:30:00');
-var weddingNight = moment('2017-06-24 22:00:00');
+var engaged = moment('2016-11-23 18:30:00 -06:00');
+var weddingNight = moment('2017-06-24 21:00:00 -05:00');
 
 function render() {
   var percent = calcTime();
